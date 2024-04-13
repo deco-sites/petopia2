@@ -5,8 +5,8 @@
     "scope": "/",
     "start_url": "/",
     "id": "/?source=pwa",
-    "name": "Fashion by Deco",
-    "short_name": "Fashion",
+    "name": "Petopia2",
+    "short_name": "Petopia",
     "orientation": "portrait",
     "icons": [
         {
@@ -30,5 +30,5 @@
             "type": "image/png"
         }
     ],
-    "description": "Latest fashion trends in Rio"
+    "description": "Uma variedade de roupas, acessórios e joias inspiradas em estilos tradicionais de diferentes culturas. Isso inclui roupas étnicas, lenços bordados à mão, bolsas de couro artesanais e muito mais, tudo projetado por designers locais que valorizam técnicas de fabricação tradicionais"
 }

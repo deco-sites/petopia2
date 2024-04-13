@@ -16,7 +16,7 @@ export interface Props {
 export default function Cupom(props: Props) {
   return (
     <>
-      <div className="hero min-h-screen bg-secondary">
+      <div className="hero min-h-screen bg-accent">
         <div className="hero-content text-center flex-col">
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">{props.title}</h1>

@@ -12,6 +12,7 @@ import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { clx } from "../../sdk/clx.ts";
+import HorizontalProductCard from "./HorizontalProductCard.tsx";
 
 export interface Props {
   products: Product[] | null;
@@ -84,12 +85,8 @@ function ProductShelf({
                 slideMobile[layout?.numberOfSliders?.mobile ?? 1],
               )}
             >
-              <ProductCard
+              <HorizontalProductCard
                 product={product}
-                itemListName={title}
-                layout={cardLayout}
-                platform={platform}
-                index={index}
               />
             </Slider.Item>
           ))}

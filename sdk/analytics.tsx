@@ -9,7 +9,7 @@ export interface ScoreParams{
   character?: string
 }
 export interface ScoreEvent{
-  name: "post_score",
+  name: string,
   params: ScoreParams
 }
 

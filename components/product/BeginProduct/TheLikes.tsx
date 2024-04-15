@@ -1,3 +1,5 @@
+
+import { sendScoreEvent } from "../../../sdk/analytics.tsx";
 import Icon from "../../ui/Icon.tsx";
 import { numberOfLikes } from "../../../sdk/useLikes.ts";
 import { useSignal, useSignalEffect } from "@preact/signals";
@@ -8,9 +10,16 @@ export default function TheLikes() {
 
   useSignalEffect(() => {
     async function getLikes() {
-      const response = await invoke["deco-sites/petopia2"].loaders
-        .Product.getAllLikes({});
+      const response = await invoke["deco-sites/petopia2"].loaders.Product.getAllLikes({});
       number.value = response.total;
+      sendScoreEvent(
+        {
+            name: "post_score",
+            params:{
+                score: Number(response.total)
+            }
+        }
+      )
     }
 
     if (numberOfLikes.value) {

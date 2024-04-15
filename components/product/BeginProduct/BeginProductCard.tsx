@@ -4,7 +4,6 @@ import { numberOfLikes } from "../../../sdk/useLikes.ts";
 import { invoke } from "deco-sites/petopia2/runtime.ts";
 import { Bounce, toast, ToastContainer } from "react-toastify";
 
-
 export interface Props {
   productId: string;
 }

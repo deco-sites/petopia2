@@ -142,7 +142,7 @@ function Navbar(
           </div>
         )}
 
-      <TheLikes />
+        <TheLikes />
       </div>
     </div>
   );
